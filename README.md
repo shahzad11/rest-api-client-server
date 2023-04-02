@@ -1,4 +1,4 @@
-# API Server
+# PHP API Server & Client Example Code
 This is a simple API server built with PHP that provides CRUD operations for users and posts resources. The API server uses a MySQL database to store the data.
 
 ## Installation
