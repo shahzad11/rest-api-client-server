@@ -5,8 +5,6 @@ This is a simple API server built with PHP that provides CRUD operations for use
 To install the API server, follow these steps:
 
 * Clone the repository to your local machine.
-* Create a new MySQL database and import the database.sql file in the repository to create the required tables.
-* Update the database connection settings in the config.php file in the repository to match your database settings.
 * Upload the repository files to your web server.
 ## Usage
 The API server provides the following endpoints for working with users and posts resources:
@@ -20,7 +18,8 @@ PUT /users/{id}: Update an existing user.
 DELETE /users/{id}: Delete a user.
 ```
 ## Posts Endpoints
-```GET /posts: Get a list of all posts.
+``` 
+GET /posts: Get a list of all posts.
 GET /posts/: Get a list of all posts.
 GET /posts/{id}: Get the details of a specific post.
 POST /posts: Create a new post.
@@ -49,7 +48,7 @@ The API server will respond with a JSON object containing the details of the new
     "password": "secret"
 }
 ```
-E#rror Codes
+## Error Codes
 The API server includes error handling for common error scenarios, such as invalid requests, missing parameters, and database errors. The API server will respond with an appropriate HTTP status code and error message in the response body. Here are the error codes that the API server may return:
 
 * 400 Bad Request: The request was malformed or missing a required parameter.
